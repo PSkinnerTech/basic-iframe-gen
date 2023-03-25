@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Iframe Generator</title>
+  </head>
+  <body>
+    <h1>Iframe Generator</h1>
+    <form id="iframe-generator-form">
+      <label for="url-input">URL:</label>
+      <input
+        type="url"
+        id="url-input"
+        placeholder="https://example.com"
+        required
+      />
+      <br />
+      <label for="width-input">Width:</label>
+      <input type="number" id="width-input" value="640" min="1" required />
+      <label for="height-input">Height:</label>
+      <input type="number" id="height-input" value="480" min="1" required />
+      <br />
+      <button type="submit">Generate Iframe</button>
+    </form>
+    <h2>Generated Iframe:</h2>
+    <div id="iframe-container"></div>
+    <h2>Iframe Code:</h2>
+    <textarea id="iframe-code" readonly></textarea>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </body>
+</html>
