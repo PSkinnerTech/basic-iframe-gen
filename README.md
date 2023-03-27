@@ -2,6 +2,9 @@
 
 Iframe Generator is a simple, user-friendly web application that allows users to generate iframes for embedding content from other websites into their own web pages. The generator provides an easy-to-use interface for inputting the desired URL, iframe width, and iframe height, and automatically generates the corresponding iframe code.
 
+<img width="436" alt="Screenshot 2023-03-27 at 7 09 31 AM" src="https://user-images.githubusercontent.com/78289253/227937813-3afef0fd-f1e3-4975-88af-4cc7316550af.png">
+
+
 ## Features
 
 - User-friendly form for entering URL, width, and height
