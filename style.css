@@ -3,21 +3,55 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: var(--light);
 }
 
-h1,
-h2 {
+:root{
+  --light: #f5f5f5;
+  --white: #fff;
+  --border: #ccc;
+  --black: black;
+}
+
+.dark-theme{
+  --white: #222;
+  --light: #111;
+  --black: white;
+  --border: black;
+}
+
+h1, h2 {
   text-align: center;
+  color: var(--black);
+}
+
+.theme{
+  display: flex;
+  padding-top: 2vh;
+}
+
+#btntxt{
+  padding-left: 80vw;
+  color: var(--black);
+  padding-right: 1vw;
+  padding-top: 2px;
+  font-weight: bold;
+  font-size: x-large;
+
+}
+#icon{
+  width: 30px;
+  cursor: pointer;
 }
 
 #iframe-generator-form {
   max-width: 500px;
+  color: var(--black);
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px black;
 }
 
 #iframe-generator-form label {
@@ -31,7 +65,7 @@ h2 {
   display: inline-block;
   margin-top: 10px;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
   border-radius: 4px;
   width: 100%;
   max-width: 300px;
@@ -47,16 +81,18 @@ button {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   font-weight: bold;
   border: none;
+  box-shadow: 0 2px 12px black;
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #004ea1;
+  box-shadow: none;
 }
 
 #iframe-container {
@@ -64,13 +100,15 @@ button:hover {
   overflow: auto;
   margin: 20px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px black;
 }
 
 textarea {
   display: block;
+  color: var(--black);
+  background-color: var(--white);
   width: 100%;
   max-width: 600px;
   margin: 20px auto;

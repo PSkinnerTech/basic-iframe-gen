@@ -1,3 +1,20 @@
+
+// Script for Chaning Website Theme
+var icon = document.getElementById("icon");
+var bnttxt = document.getElementById("btntxt");
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src = "Images/sun.png"
+    bnttxt.innerHTML = "Light";
+  }
+  else{
+    icon.src = "Images/moon.png"
+    bnttxt.innerHTML = "Dark";
+  }
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("iframe-generator-form");
   const urlInput = document.getElementById("url-input");
